@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  RewriteCond %{SCRIPT_FILENAME} !-d
+  RewriteCond %{SCRIPT_FILENAME} !-f
+  RewriteRule .* index.php [L]
+
+  #--------------------------------------------
+  # Comment out all of these when we go live
+  #--------------------------------------------
+  #RewriteCond %{HTTP_USER_AGENT} !^Googlebot.*
+  #RewriteCond %{REMOTE_HOST} !^81\.29\.85\.62
+  #RewriteCond %{REMOTE_HOST} !^74\.125\.16\.6
+  #RewriteCond %{REMOTE_HOST} !^81\.29\.64\.26
+  #RewriteCond %{REMOTE_HOST} !^66\.249.
+  #RewriteCond %{REMOTE_HOST} !^82\.2\.81\.19
+  #RewriteRule !^holding\.htm$ /holding.htm [L]
+  #--------------------------------------------
+</IfModule>

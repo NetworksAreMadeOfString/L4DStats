@@ -1,0 +1,57 @@
+0.3B -> 0.3.1B
+------------
+        * Fixed Player Death Stats not displaying correctly on the front page
+        * Removed Static Links in Templates to author domains
+        * Fixed PHP Short tags were used
+        * Fixed Blood Harvest VS Map Name matching
+        * Fixed PHP Processor not moving files to ./old/
+        * Fixed headshots not being recorded properly
+        * Fixed Flash graphs hang if no data in DB
+        * Removed the mono binary
+	* Replaced the mono binary with a Log Parser written in C++
+        * Added Dateranoth's graph improvements
+        * Added ability to disable AI Kills displaying
+        * Added player names links on front page to their indiv stats page
+        * Added Friendly names for the weapons in graphs etc
+        * Added Headshot counts to all Weapons related pages
+        * Change Top 50 Players to show total headshots instead of the broken % thing
+        * Added to Players Page which now has lots of new breakdowns
+        * Added a ‘Movie’ page to see which has the most kills
+        * Added Pagination to Top Games
+        * Added a Regular Expression parsing ability
+        * Log Processers can now process sv_log_onefile 0 & 1
+	* Improved the Player Matrix on the Individual Game View
+	* Added missing images
+	* Fixed issue with Melee weapons not showing as legitimate kills
+	* Added an MOTD page (motd.php) for use as the servers MOTD
+	* Loads and loads of little things
+
+0.2B -> 0.3B
+------------
+	* Added a linux (mono) log parsing binary
+	* Fixed input validation bugs with the parsing binaries
+	* Added additional stats types and graphs
+	* Added Player Death Matrix
+	* Added the use of GET's if mod_rewrite is unavailable
+	* Fixed an issue with POST'ing to lighttpd
+	* Improved a *lot* of the big SQL queries
+	* Fixed Headshot detection
+	* Fixed multi timespan log issues
+	* Improved GUI .NET Tool
+	* Improved DB Table design
+
+0.1B -> 0.2B
+------------
+	* Cleaned up a lot of the code
+	* Used bulk MySQL inserts for the statistics
+	* DB Table Redesign
+	* Improved customisability from settings.php
+	* XMLRPC for remote servers to send parsed data to a central stats server
+	* More Generic Statistics 'getters' for front page etc
+	* Graphs for certain data views
+	* Added several 'Last X Days' Stats and Graphs
+	* Improved CSS
+	* Map 'Posters' on Detailed Game View Page
+	* Improved accuracy for Weapon / Player Name parsing
+	* Parse and records AI deaths / kills / actions
+	* Added two Windows .NET executables for log processing and XMLRPC
